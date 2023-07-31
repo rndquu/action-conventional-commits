@@ -17,6 +17,9 @@ runs:
     - name: Git clone conventional-commits repo
       run: git clone https://github.com/rndquu/action-conventional-commits
       shell: bash
+    - name: Install dependencies
+      run: yarn install
+      shell: bash
     - name: Debug
       run: ls -la
       shell: bash
