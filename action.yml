@@ -14,8 +14,11 @@ runs:
     - name: Download source file
       run: wget https://raw.githubusercontent.com/rndquu/action-conventional-commits/master/src/main.ts
       shell: bash
+    - name: Git clone conventional-commits repo
+      run: git clone https://github.com/rndquu/action-conventional-commits
+      shell: bash
     - name: Debug
       run: ls -la
       shell: bash
-    - run: npx tsx main.ts
+    - run: npx tsx action-conventional-commits/src/main.ts
       shell: bash
