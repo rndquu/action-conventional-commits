@@ -5,6 +5,7 @@ import isValidCommitMessage from "./isValidCommitMesage";
 import extractCommits from "./extractCommits";
 
 async function run() {
+    core.info('Debug message');
     core.info(
         `ℹ️ Checking if commit messages are following the Conventional Commits specification...`
     );
