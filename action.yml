@@ -11,6 +11,9 @@ runs:
       uses: actions/setup-node@v3
       with:
         node-version: "18.14.1"
+    - name: Download source file
+      run: wget https://raw.githubusercontent.com/rndquu/action-conventional-commits/master/src/main.ts
+      shell: bash
     - name: Debug
       run: ls -la
       shell: bash
