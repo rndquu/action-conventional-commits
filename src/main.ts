@@ -7,6 +7,7 @@ import extractCommits from "./extractCommits";
 async function run() {
     core.info('Debug message');
     core.info('Debug message 2');
+    core.info('Debug message 3');
     core.info(
         `ℹ️ Checking if commit messages are following the Conventional Commits specification...`
     );
