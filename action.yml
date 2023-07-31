@@ -11,5 +11,8 @@ runs:
       uses: actions/setup-node@v3
       with:
         node-version: "18.14.1"
+    - name: Debug
+      run: ls -la
+      shell: bash
     - run: npx tsx src/main.ts
       shell: bash
