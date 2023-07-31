@@ -7,5 +7,9 @@ inputs:
 runs:
   using: "composite"
   steps:
+    - name: Setup Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: "18.14.1"
     - run: npx tsx src/main.ts
       shell: bash
