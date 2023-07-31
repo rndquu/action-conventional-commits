@@ -18,7 +18,7 @@ runs:
     #   run: cd action-conventional-commits && yarn install
     #   shell: bash
     - name: Debug
-      run: ls -la
+      run: cd ~ && ls -la
       shell: bash
     - run: npx tsx action-conventional-commits/src/main.ts
       shell: bash
